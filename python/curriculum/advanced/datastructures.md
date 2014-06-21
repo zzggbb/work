@@ -147,11 +147,9 @@ strings
     x = { 'length':l, 'width':w, 'height':h }
     for key, value in x:
         print key + " of " + value
-    """
-    length of 70
-    width of 40
-    height of 150
-    """
+    # length of 70
+    # width of 40
+    # height of 150
 
 
 ## Tuples
