@@ -2,7 +2,7 @@
 
 ### List
 
-* List comprehensions are also written inbetween [ and ]
+* List comprehensions are also written inbetween `[` and `]`
 * They follow the syntax `[do_something for var in list]`
 * eg:
     ```python
@@ -19,8 +19,9 @@
     ```
 
 ### Dictionary
-* dictionary comprehensions are also written in the same style as their non-comprehension counterpart, between { and }
+* dictionary comprehensions are also written in the same style as their non-comprehension counterpart, between `{` and `}`
 * eg:
+
     ```python
     len_dict = {x:len(x) for x in ['hello','python','techlab','foo']}
     print(len_dict)

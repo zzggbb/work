@@ -100,6 +100,15 @@ print y
 	* reverse a list
 
 ## Dictionaries
+* Otherwise known as "associative arrays"
+* Dictionaries have no order, their values are referenced by a key, rather than
+their position, with the same square-brace notation as used with lists and
+strings
+    * keys can be strings or numbers
+    ```python
+    some_dict = {1:'hello',2:'hello again!'}
+    print(some_dict[2])
+    # 'hello again!'
 
 ## Tuples
 

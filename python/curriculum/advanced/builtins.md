@@ -8,7 +8,7 @@ x = ["hello","foo","bar"]
 print "@#".join(x)
 # "hello@#foo@#bar"
 ```
-* the separator can be an empty string ```""``` if you want to remove the space between each item.
+* the separator can be an empty string `""` if you want to remove the space between each item.
 
 ## str.split(separator)
 
