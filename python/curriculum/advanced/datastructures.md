@@ -104,6 +104,7 @@ print y
 * Dictionaries have no order, their values are referenced by a key, rather than
 their position, with the same square-brace notation as used with lists and
 strings
+* written as a sequence of key:value pairs between curly-braces
     * keys can be strings or numbers
     ```python
     some_dict = {1:'hello',2:'hello again!'}
@@ -145,13 +146,61 @@ strings
     ```python
     l,w,h = 70,40,150
     x = { 'length':l, 'width':w, 'height':h }
-    for key, value in x:
-        print key + " of " + value
-    # length of 70
-    # width of 40
-    # height of 150
-
+    print(list(x.items()))
+    # [('h',150),('w':40),('l':70)]
 
 ## Tuples
+* comma separated ordered sequence of items surrounded by parenthesis
+* items in a tuple are accessed by their index, as with lists
+* tuples are very similar to lists, however tuples cannot be modified.
+    * for example:
+    ```python
+    t = (1,2,3,4,5) # note, the parens are not needed in this case, but they are good to have
+    print(t)
+    # (1, 2, 3, 4, 5)
+    t[0] = 300
+    # this is illegal
+    ```
 
 ## Sets
+* sequence of unordered items that cannot contain duplicate items
+* items in a set cannot be accessed with the same `[`*key*`]` or `[`index`]` syntax of dictionaries and lists 
+* can be created with `{`*items*`}` or `set(`*list_of_items*`)`
+
+```python
+my_stuff = {'desk','chair','table','table','lamp','lamp','chair','desk'}
+print(my_stuff)
+# {'desk','chair','table','lamp'}
+```
+
+#### Set Operations
+
+* thing ***in*** set
+    * test if `thing` is an item in `set`
+    ```python
+    x = {1,2,3,4,5}
+    print(5 in x)
+    # True
+    print(8 in x)
+    # False
+    ```
+
+* a ***-*** b
+    * items in `a` but not in `b`
+    ```python
+    a = {'a','b','c','d'}
+    b = {'c','d','e','f'}
+    print(a-b)
+    # {'a','b'}
+    print(b-a)
+    # {'e','f'}
+    ```
+
+* a ***|*** b
+    * or: items in `a` or `b`
+
+* a ***&*** b
+    * and: items in `a` and `b`
+
+* a ***^*** b
+    * xor: items in `a` or `b` but not both
