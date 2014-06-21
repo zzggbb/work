@@ -109,6 +109,50 @@ strings
     some_dict = {1:'hello',2:'hello again!'}
     print(some_dict[2])
     # 'hello again!'
+    ```
+
+#### Dictionary Methods
+
+* **len**(dict)
+    * len will return the number of key-value pairs when used on a dictionary
+    ```python
+    x = {'a':6,'b':8}
+    print(len(x))
+    # 2
+    ```
+
+* dict.**keys**()
+    * a list of all the `keys` in the dictionary
+    ```python
+    x = {'eggs':2, 'bacon':5}
+    print(list(x.keys()))
+    # ['eggs','bacon']
+    ```
+
+* dict.**values()
+    * a list of all the `values` in the dictionary
+    ```python
+    x = {'dave':33, 'zane':17, 'morgan':24}
+    print(list(x.values()))
+    # [33,17,24]
+    print sum(list(x.values()))
+    # 74
+    ```
+
+* dict.**items**()
+    * a list of the dictionaries key-value pairs 
+        * each pair is a tuple
+    ```python
+    l,w,h = 70,40,150
+    x = { 'length':l, 'width':w, 'height':h }
+    for key, value in x:
+        print key + " of " + value
+    """
+    length of 70
+    width of 40
+    height of 150
+    """
+
 
 ## Tuples
 
