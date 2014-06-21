@@ -164,8 +164,8 @@ strings
 
 ## Sets
 * sequence of unordered items that cannot contain duplicate items
-* items in a set cannot be accessed with the same `[`*key*`]` or `[`index`]` syntax of dictionaries and lists 
-* can be created with `{`*items*`}` or `set(`*list_of_items*`)`
+* items in a set cannot be accessed with the same `[key]` or `[index]` syntax of dictionaries and lists 
+* can be created with `{items}` or `set(list_of_items)`
 
 ```python
 my_stuff = {'desk','chair','table','table','lamp','lamp','chair','desk'}
@@ -175,7 +175,7 @@ print(my_stuff)
 
 #### Set Operations
 
-* thing ***in*** set
+* thing **in** set
     * test if `thing` is an item in `set`
     ```python
     x = {1,2,3,4,5}
@@ -185,7 +185,7 @@ print(my_stuff)
     # False
     ```
 
-* a ***-*** b
+* a **-** b
     * items in `a` but not in `b`
     ```python
     a = {'a','b','c','d'}
@@ -196,11 +196,11 @@ print(my_stuff)
     # {'e','f'}
     ```
 
-* a ***|*** b
+* a **|** b
     * or: items in `a` or `b`
 
-* a ***&*** b
+* a **&** b
     * and: items in `a` and `b`
 
-* a ***^*** b
+* a **^** b
     * xor: items in `a` or `b` but not both
