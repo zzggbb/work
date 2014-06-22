@@ -83,7 +83,7 @@ is not| reverse identity
 #True
 "cat" is "dog"
 # False
-"bird is not "fish"
+"bird" is not "fish"
 #True
 
 ```
