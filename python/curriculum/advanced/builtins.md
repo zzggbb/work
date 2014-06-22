@@ -39,6 +39,7 @@ print(list(x))
 ## filter(function,iterable)
 * return a copy of `iterable` for which all elements return `True` when passed to `function`
 * eg:
+```python
 # function for our filter statement
 def is_even(x):
     # it must return a boolean
@@ -47,6 +48,7 @@ def is_even(x):
 an_iter = [1,2,3,4,5,6,7]
 print(filter(is_even,an_iter))
 # [2,4,6]
+```
 
 ## reduce(function,iterable)
 * reduce `iterable` to a single value by applying the function `function` to the next value and the current accumulated value
