@@ -1,5 +1,5 @@
 ## Intro
-* a boolean can only be 1 of 2 values: True or False
+* a boolean can only be 1 of 2 values: `True` or `False`
 * booleans are written with the first letter uppercased when written literally
 ```python
 x = True # not written as `true`, as it is in languages like java
@@ -18,7 +18,7 @@ x = true # error
   ```
 * or
  * binary operator, goes between two other boolean expressions
- * If at least one of the boolean expressions are True, gives True
+ * If at least one of the boolean expressions are `True`, gives `True`
  ```python
  True or False
  # True
@@ -30,7 +30,7 @@ x = true # error
 
 * and
  * also a binary operator, goes between two other boolean expressions
- * both expressions must be True to give True
+ * both expressions must be `True` to give `True`
  ```python
  True and False
  # False
