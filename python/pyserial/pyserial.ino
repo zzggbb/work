@@ -12,11 +12,11 @@ void loop() {
   if (Serial.available() > 0) {
     str = Serial.readStringUntil('\n');
   }
-  if(str=="on")digitalWrite(pin,HIGH);
+  if(str=="on") digitalWrite(pin,HIGH);
 
-  if(str=="off")digitalWrite(pin,LOW);
+  if(str=="off") digitalWrite(pin,LOW);
 
-  if(str=="pause")delay(500);
+  if(str=="pause") delay(500);
   
   delay(500);
 }
