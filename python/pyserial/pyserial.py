@@ -2,21 +2,17 @@
 
 import serial
 
-DEVPORT = '/dev/tty.usbmodem1421'
+DEVPORT = '/dev/tty.usbmodem1a1331'
 RATE=9600
+CMDS = ['on','off','pause']
 
 s = serial.Serial(port=DEVPORT,baudrate=RATE)
 
-def parse(cmd):
-	if 'blink' in cmd:
-		return cmd[:5]*(int(cmd[5:]))
-	return cmd
-
 while (True):
-	text = list(map(parse,input("Type a command: ").split(" ")))
-	print(text)
-	"""
-	for command in text:
+	raw = input("Type a command: ").split(" ")
+	ok = list(filter(lambda x: x in CMDS, raw))
+	bad = list(set(raw) - set(ok))
+	if bad: print ("These commands aren't valid: " + " ".join(bad))
+	for command in ok:
 		s.write((command + '\n').encode())
-	"""
 s.close()
