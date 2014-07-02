@@ -1,12 +1,13 @@
 #!/bin/python3
 
 import serial
+import glob
 
-DEVPORT = '/dev/tty.usbmodem1a1331'
+PORT = glob.glob("/dev/tty.usb*")[0]
 RATE=9600
 CMDS = ['on','off','pause']
 
-s = serial.Serial(port=DEVPORT,baudrate=RATE)
+s = serial.Serial(port=PORT,baudrate=RATE)
 
 while (True):
 	raw = input("Type a command: ").split(" ")
