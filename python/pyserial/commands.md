@@ -1,3 +1,3 @@
-**repeat** *amount* *commmand* [*command*...]
+**repeat** *<amount>* *<commmand>* [*<command>*...]
 
-**new** *name* *command* [*command*...]
+**new** *<name>* *<command>* [*<command>*...]
